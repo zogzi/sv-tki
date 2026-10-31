@@ -1,0 +1,38 @@
+{
+  "2026": {
+    "ligo": {
+      "lv": [
+        {
+          "title": "Līgo vakars",
+          "headline": "Līgo dziesma kā vēstures avots",
+          "greeting": "Tautasdziesma nav notikumu protokols. Tā ir kultūras liecība, kuru vērts lasīt uzmanīgi.\n\nLīgo dziesmās var pētīt valodu, darbu, savstarpējās attiecības un priekšstatus par svētkiem. Viena teksta variants nav pierādījums tam, ka visā Latvijā un visos laikos svinēts vienādi. Vērtīgais sākas tur, kur salīdzinām: kas atkārtojas, kas atšķiras, un ko par pieraksta apstākļiem zinām?",
+          "fact": "Dainu skapja digitālajā krājumā pieejami tautasdziesmu pieraksti. Konkrētu piemēru izpēte ļauj sarunu par tradīciju balstīt avotos, nevis tikai pazīstamos simbolos.",
+          "fact_label": "Avots turpmākai izpētei",
+          "calendar_context": true,
+          "sources": [
+            {
+              "title": "Dainu skapis — digitālais tautasdziesmu krājums",
+              "url": "https://dainuskapis.lv/"
+            }
+          ]
+        }
+      ],
+      "en": [
+        {
+          "title": "Midsummer Eve",
+          "headline": "The Līgo song as a historical source",
+          "greeting": "A folk song is not a transcript of events. It is cultural evidence that deserves careful reading.\n\nLīgo songs can be studied for their language, work, social relationships, and ideas about celebration. A single textual variant does not establish that people across Latvia celebrated identically in every period. The useful questions begin with comparison: what recurs, what differs, and what do we know about the circumstances in which a text was recorded?",
+          "fact": "The digital Dainu skapis collection provides access to recorded folk-song texts. Examining concrete examples can ground a discussion of tradition in sources, rather than familiar symbols alone.",
+          "fact_label": "A source for further study",
+          "calendar_context": true,
+          "sources": [
+            {
+              "title": "Dainu skapis — digital folk-song collection",
+              "url": "https://dainuskapis.lv/"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

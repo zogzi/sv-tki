@@ -1,0 +1,1004 @@
+[
+  {
+    "id": "new_year",
+    "rule": {
+      "type": "fixed",
+      "month": 1,
+      "day": 1
+    },
+    "content": {
+      "lv": [
+        {
+          "title": "Jaunais gads",
+          "greeting": "Gada robeža ļauj pārskatīt izvēles: kur ieguldām laiku un pēc kā vērtējam progresu. Vērtīgāks par lielu apņemšanos ir konkrēts, pārbaudāms solis.",
+          "fact": "Latvijā 1. janvāris ir svētku diena.",
+          "headline": "Jaunais gads: kalendārs un cilvēka izvēles"
+        },
+        {
+          "title": "Jaunais gads",
+          "greeting": "Gada robeža ļauj pārskatīt izvēles: kur ieguldām laiku un pēc kā vērtējam progresu. Vērtīgāks par lielu apņemšanos ir konkrēts, pārbaudāms solis.",
+          "fact": "Gada pirmā diena ir labs brīdis jaunam ieradumam.",
+          "headline": "Laika uzskaite un ieradumi"
+        },
+        {
+          "title": "Jaunais gads",
+          "greeting": "Gada robeža ļauj pārskatīt izvēles: kur ieguldām laiku un pēc kā vērtējam progresu. Vērtīgāks par lielu apņemšanos ir konkrēts, pārbaudāms solis.",
+          "fact": "Gregora kalendārā parastā gadā ir 365 dienas.",
+          "headline": "Gregora kalendāra uzbūve"
+        },
+        {
+          "title": "Jaunais gads",
+          "greeting": "Gada robeža ļauj pārskatīt izvēles: kur ieguldām laiku un pēc kā vērtējam progresu. Vērtīgāks par lielu apņemšanos ir konkrēts, pārbaudāms solis.",
+          "fact": "Garajā gadā februārim ir 29 dienas.",
+          "headline": "Garais gads un kalendāra precizitāte"
+        },
+        {
+          "title": "Jaunais gads",
+          "greeting": "Gada robeža ļauj pārskatīt izvēles: kur ieguldām laiku un pēc kā vērtējam progresu. Vērtīgāks par lielu apņemšanos ir konkrēts, pārbaudāms solis.",
+          "fact": "Jaungada apņemšanos var sākt ar vienu mazu soli.",
+          "headline": "Mērķis, kuru iespējams īstenot"
+        }
+      ],
+      "en": [
+        {
+          "title": "New Year",
+          "greeting": "The turn of the year offers a chance to review where we invest time and how we judge progress. A concrete, testable step is more useful than a grand resolution.",
+          "fact": "January 1 is a public holiday in Latvia.",
+          "headline": "New Year: calendars and human choices"
+        },
+        {
+          "title": "New Year",
+          "greeting": "The turn of the year offers a chance to review where we invest time and how we judge progress. A concrete, testable step is more useful than a grand resolution.",
+          "fact": "The first day of a year can mark a new habit.",
+          "headline": "Measuring time and building habits"
+        },
+        {
+          "title": "New Year",
+          "greeting": "The turn of the year offers a chance to review where we invest time and how we judge progress. A concrete, testable step is more useful than a grand resolution.",
+          "fact": "A common Gregorian year has 365 days.",
+          "headline": "The structure of the Gregorian calendar"
+        },
+        {
+          "title": "New Year",
+          "greeting": "The turn of the year offers a chance to review where we invest time and how we judge progress. A concrete, testable step is more useful than a grand resolution.",
+          "fact": "February has 29 days in a leap year.",
+          "headline": "Leap years and calendar precision"
+        },
+        {
+          "title": "New Year",
+          "greeting": "The turn of the year offers a chance to review where we invest time and how we judge progress. A concrete, testable step is more useful than a grand resolution.",
+          "fact": "A resolution can begin with one small step.",
+          "headline": "A goal that can be put into practice"
+        }
+      ]
+    },
+    "tone": "warm",
+    "editorial_status": "draft"
+  },
+  {
+    "id": "valentine",
+    "rule": {
+      "type": "fixed",
+      "month": 2,
+      "day": 14
+    },
+    "content": {
+      "lv": [
+        {
+          "title": "Valentīndiena",
+          "greeting": "Attiecību kvalitāti ir grūti izmērīt ar vienas dienas simboliem. Šo datumu var izmantot, lai pamanītu ikdienas rīcību: uzticamību, uzmanību un spēju pateikties.",
+          "fact": "Draudzību var svinēt arī bez dāvanām.",
+          "headline": "Valentīndiena un rūpju kultūra"
+        },
+        {
+          "title": "Valentīndiena",
+          "greeting": "Attiecību kvalitāti ir grūti izmērīt ar vienas dienas simboliem. Šo datumu var izmantot, lai pamanītu ikdienas rīcību: uzticamību, uzmanību un spēju pateikties.",
+          "fact": "Ar roku rakstīta zīmīte var kļūt par piemiņu.",
+          "headline": "Rakstīta vārda paliekošā nozīme"
+        },
+        {
+          "title": "Valentīndiena",
+          "greeting": "Attiecību kvalitāti ir grūti izmērīt ar vienas dienas simboliem. Šo datumu var izmantot, lai pamanītu ikdienas rīcību: uzticamību, uzmanību un spēju pateikties.",
+          "fact": "Valentīndienu atzīmē 14. februārī.",
+          "headline": "Draudzība kā attiecību vērtība"
+        },
+        {
+          "title": "Valentīndiena",
+          "greeting": "Attiecību kvalitāti ir grūti izmērīt ar vienas dienas simboliem. Šo datumu var izmantot, lai pamanītu ikdienas rīcību: uzticamību, uzmanību un spēju pateikties.",
+          "fact": "Mīlestības izpausmes dažādās kultūrās atšķiras.",
+          "headline": "Attiecības dažādu kultūru skatījumā"
+        },
+        {
+          "title": "Valentīndiena",
+          "greeting": "Attiecību kvalitāti ir grūti izmērīt ar vienas dienas simboliem. Šo datumu var izmantot, lai pamanītu ikdienas rīcību: uzticamību, uzmanību un spēju pateikties.",
+          "fact": "Pateicība ir vienkāršs veids, kā stiprināt attiecības.",
+          "headline": "Pateicība kā apzināta rīcība"
+        }
+      ],
+      "en": [
+        {
+          "title": "Valentine’s Day",
+          "greeting": "The quality of a relationship is difficult to measure through the symbols of a single day. The date can instead draw attention to everyday actions: reliability, attention, and gratitude.",
+          "fact": "Friendship can be celebrated without gifts.",
+          "headline": "Valentine’s Day and a culture of care"
+        },
+        {
+          "title": "Valentine’s Day",
+          "greeting": "The quality of a relationship is difficult to measure through the symbols of a single day. The date can instead draw attention to everyday actions: reliability, attention, and gratitude.",
+          "fact": "A handwritten note can become a keepsake.",
+          "headline": "The lasting value of a written word"
+        },
+        {
+          "title": "Valentine’s Day",
+          "greeting": "The quality of a relationship is difficult to measure through the symbols of a single day. The date can instead draw attention to everyday actions: reliability, attention, and gratitude.",
+          "fact": "Valentine’s Day falls on February 14.",
+          "headline": "Friendship as a relationship worth maintaining"
+        },
+        {
+          "title": "Valentine’s Day",
+          "greeting": "The quality of a relationship is difficult to measure through the symbols of a single day. The date can instead draw attention to everyday actions: reliability, attention, and gratitude.",
+          "fact": "Expressions of love differ across cultures.",
+          "headline": "Relationships across cultures"
+        },
+        {
+          "title": "Valentine’s Day",
+          "greeting": "The quality of a relationship is difficult to measure through the symbols of a single day. The date can instead draw attention to everyday actions: reliability, attention, and gratitude.",
+          "fact": "Gratitude is a simple way to strengthen a relationship.",
+          "headline": "Gratitude as a deliberate act"
+        }
+      ]
+    },
+    "tone": "warm",
+    "editorial_status": "draft"
+  },
+  {
+    "id": "labour",
+    "rule": {
+      "type": "fixed",
+      "month": 5,
+      "day": 1
+    },
+    "content": {
+      "lv": [
+        {
+          "title": "Darba svētki",
+          "greeting": "1. maijā ir vērts nošķirt darba apjomu no darba vērtības. Kvalitātei vajadzīgas ne tikai prasmes, bet arī apstākļi, kuros cilvēks var strādāt atbildīgi.",
+          "fact": "1. maijs Latvijā ir svētku diena.",
+          "headline": "Darba svētki: tiesības un darba kvalitāte"
+        },
+        {
+          "title": "Darba svētki",
+          "greeting": "1. maijā ir vērts nošķirt darba apjomu no darba vērtības. Kvalitātei vajadzīgas ne tikai prasmes, bet arī apstākļi, kuros cilvēks var strādāt atbildīgi.",
+          "fact": "1. maijā Latvijā atzīmē arī Satversmes sapulces sasaukšanu.",
+          "headline": "1. maija divējādā nozīme Latvijā"
+        },
+        {
+          "title": "Darba svētki",
+          "greeting": "1. maijā ir vērts nošķirt darba apjomu no darba vērtības. Kvalitātei vajadzīgas ne tikai prasmes, bet arī apstākļi, kuros cilvēks var strādāt atbildīgi.",
+          "fact": "Satversmes sapulce sanāca 1920. gada 1. maijā.",
+          "headline": "1920. gads un Satversmes sapulce"
+        },
+        {
+          "title": "Darba svētki",
+          "greeting": "1. maijā ir vērts nošķirt darba apjomu no darba vērtības. Kvalitātei vajadzīgas ne tikai prasmes, bet arī apstākļi, kuros cilvēks var strādāt atbildīgi.",
+          "fact": "Darba svētki atgādina par darbinieku tiesībām.",
+          "headline": "Darba tiesības kā institucionāls sasniegums"
+        },
+        {
+          "title": "Darba svētki",
+          "greeting": "1. maijā ir vērts nošķirt darba apjomu no darba vērtības. Kvalitātei vajadzīgas ne tikai prasmes, bet arī apstākļi, kuros cilvēks var strādāt atbildīgi.",
+          "fact": "Atpūta ir svarīga ilgtspējīga darba daļa.",
+          "headline": "Atpūta un ilgtspējīgs darbs"
+        }
+      ],
+      "en": [
+        {
+          "title": "Labour Day",
+          "greeting": "May 1 invites a distinction between the volume of work and its value. Quality requires skills, but also conditions in which people can work responsibly.",
+          "fact": "May 1 is a public holiday in Latvia.",
+          "headline": "Labour Day: rights and the quality of work"
+        },
+        {
+          "title": "Labour Day",
+          "greeting": "May 1 invites a distinction between the volume of work and its value. Quality requires skills, but also conditions in which people can work responsibly.",
+          "fact": "Latvia also marks the convening of its Constitutional Assembly on May 1.",
+          "headline": "The two meanings of May 1 in Latvia"
+        },
+        {
+          "title": "Labour Day",
+          "greeting": "May 1 invites a distinction between the volume of work and its value. Quality requires skills, but also conditions in which people can work responsibly.",
+          "fact": "The Constitutional Assembly first met on May 1, 1920.",
+          "headline": "1920 and the Constitutional Assembly"
+        },
+        {
+          "title": "Labour Day",
+          "greeting": "May 1 invites a distinction between the volume of work and its value. Quality requires skills, but also conditions in which people can work responsibly.",
+          "fact": "Labour Day recalls workers’ rights.",
+          "headline": "Labour rights as an institutional achievement"
+        },
+        {
+          "title": "Labour Day",
+          "greeting": "May 1 invites a distinction between the volume of work and its value. Quality requires skills, but also conditions in which people can work responsibly.",
+          "fact": "Rest is part of sustainable work.",
+          "headline": "Rest and sustainable work"
+        }
+      ]
+    },
+    "tone": "warm",
+    "editorial_status": "draft"
+  },
+  {
+    "id": "restoration",
+    "rule": {
+      "type": "fixed",
+      "month": 5,
+      "day": 4
+    },
+    "content": {
+      "lv": [
+        {
+          "title": "Neatkarības atjaunošanas diena",
+          "greeting": "Neatkarības atjaunošanas vēsturē svarīgs ir gan lēmums, gan process pēc tā. Precīzi datumi palīdz saprast, kā juridiska nostāja kļuva par politisku realitāti.",
+          "fact": "1990. gada 4. maijā pieņēma deklarāciju par neatkarības atjaunošanu.",
+          "headline": "4. maijs: deklarācija un valsts nepārtrauktība"
+        },
+        {
+          "title": "Neatkarības atjaunošanas diena",
+          "greeting": "Neatkarības atjaunošanas vēsturē svarīgs ir gan lēmums, gan process pēc tā. Precīzi datumi palīdz saprast, kā juridiska nostāja kļuva par politisku realitāti.",
+          "fact": "Baltā galdauta svētki aicina pulcēties pie kopīga galda.",
+          "headline": "Kopīgs galds kā pilsoniska tradīcija"
+        },
+        {
+          "title": "Neatkarības atjaunošanas diena",
+          "greeting": "Neatkarības atjaunošanas vēsturē svarīgs ir gan lēmums, gan process pēc tā. Precīzi datumi palīdz saprast, kā juridiska nostāja kļuva par politisku realitāti.",
+          "fact": "4. maijs Latvijā ir svētku diena.",
+          "headline": "Neatkarības atjaunošana un tās nozīme"
+        },
+        {
+          "title": "Neatkarības atjaunošanas diena",
+          "greeting": "Neatkarības atjaunošanas vēsturē svarīgs ir gan lēmums, gan process pēc tā. Precīzi datumi palīdz saprast, kā juridiska nostāja kļuva par politisku realitāti.",
+          "fact": "Deklarāciju pieņēma Latvijas PSR Augstākā Padome.",
+          "headline": "1990. gada lēmums vēsturiskā kontekstā"
+        },
+        {
+          "title": "Neatkarības atjaunošanas diena",
+          "greeting": "Neatkarības atjaunošanas vēsturē svarīgs ir gan lēmums, gan process pēc tā. Precīzi datumi palīdz saprast, kā juridiska nostāja kļuva par politisku realitāti.",
+          "fact": "Latvijas neatkarību pilnībā atjaunoja 1991. gada augustā.",
+          "headline": "No 1990. gada deklarācijas līdz 1991. gadam"
+        }
+      ],
+      "en": [
+        {
+          "title": "Restoration of Independence",
+          "greeting": "The history of restored independence involves both a decision and the process that followed. Precise dates help explain how a legal position became a political reality.",
+          "fact": "The restoration declaration was adopted on May 4, 1990.",
+          "headline": "May 4: the declaration and state continuity"
+        },
+        {
+          "title": "Restoration of Independence",
+          "greeting": "The history of restored independence involves both a decision and the process that followed. Precise dates help explain how a legal position became a political reality.",
+          "fact": "White Tablecloth celebrations invite people to share a table.",
+          "headline": "A shared table as a civic tradition"
+        },
+        {
+          "title": "Restoration of Independence",
+          "greeting": "The history of restored independence involves both a decision and the process that followed. Precise dates help explain how a legal position became a political reality.",
+          "fact": "May 4 is a public holiday in Latvia.",
+          "headline": "The meaning of restored independence"
+        },
+        {
+          "title": "Restoration of Independence",
+          "greeting": "The history of restored independence involves both a decision and the process that followed. Precise dates help explain how a legal position became a political reality.",
+          "fact": "The declaration was adopted by the Supreme Council of the Latvian SSR.",
+          "headline": "The decision of 1990 in historical context"
+        },
+        {
+          "title": "Restoration of Independence",
+          "greeting": "The history of restored independence involves both a decision and the process that followed. Precise dates help explain how a legal position became a political reality.",
+          "fact": "Full independence was restored in August 1991.",
+          "headline": "From the 1990 declaration to 1991"
+        }
+      ]
+    },
+    "tone": "warm",
+    "editorial_status": "draft"
+  },
+  {
+    "id": "ligo",
+    "rule": {
+      "type": "fixed",
+      "month": 6,
+      "day": 23
+    },
+    "content": {
+      "lv": [
+        {
+          "title": "Līgo vakars",
+          "greeting": "Līgo tradīcijas var iepazīt kā kultūras liecības: valodā, dziesmās, priekšmetos un prasmēs. To nozīmi labāk saprast, salīdzinot konkrētus piemērus, nevis pieņemot, ka visiem laikiem bijusi viena nemainīga tradīcija.",
+          "fact": "Līgo dziesmās bieži atkārtojas piedziedājums “līgo”.",
+          "headline": "Līgo dziesma kā kultūras avots"
+        },
+        {
+          "title": "Līgo vakars",
+          "greeting": "Līgo tradīcijas var iepazīt kā kultūras liecības: valodā, dziesmās, priekšmetos un prasmēs. To nozīmi labāk saprast, salīdzinot konkrētus piemērus, nevis pieņemot, ka visiem laikiem bijusi viena nemainīga tradīcija.",
+          "fact": "Vainagu pīšana ir viena no saulgriežu tradīcijām.",
+          "headline": "Vainags: tradīcija un materiālā kultūra"
+        },
+        {
+          "title": "Līgo vakars",
+          "greeting": "Līgo tradīcijas var iepazīt kā kultūras liecības: valodā, dziesmās, priekšmetos un prasmēs. To nozīmi labāk saprast, salīdzinot konkrētus piemērus, nevis pieņemot, ka visiem laikiem bijusi viena nemainīga tradīcija.",
+          "fact": "Jāņu sieram raksturīgas ķimenes.",
+          "headline": "Jāņu siers kā pārmantota prasme"
+        },
+        {
+          "title": "Līgo vakars",
+          "greeting": "Līgo tradīcijas var iepazīt kā kultūras liecības: valodā, dziesmās, priekšmetos un prasmēs. To nozīmi labāk saprast, salīdzinot konkrētus piemērus, nevis pieņemot, ka visiem laikiem bijusi viena nemainīga tradīcija.",
+          "fact": "Līgo vakaru svin 23. jūnijā.",
+          "headline": "23. jūnijs latviešu svētku kalendārā"
+        },
+        {
+          "title": "Līgo vakars",
+          "greeting": "Līgo tradīcijas var iepazīt kā kultūras liecības: valodā, dziesmās, priekšmetos un prasmēs. To nozīmi labāk saprast, salīdzinot konkrētus piemērus, nevis pieņemot, ka visiem laikiem bijusi viena nemainīga tradīcija.",
+          "fact": "Vasaras saulgrieži un Jāņu datums ne vienmēr sakrīt.",
+          "headline": "Svētku datums un astronomiskie saulgrieži"
+        }
+      ],
+      "en": [
+        {
+          "title": "Midsummer Eve",
+          "greeting": "Līgo traditions can be studied through language, songs, objects, and skills. Their meaning is better understood by comparing concrete examples than by assuming a single unchanging tradition across time.",
+          "fact": "Līgo songs often repeat the refrain “līgo”.",
+          "headline": "The Līgo song as a cultural source"
+        },
+        {
+          "title": "Midsummer Eve",
+          "greeting": "Līgo traditions can be studied through language, songs, objects, and skills. Their meaning is better understood by comparing concrete examples than by assuming a single unchanging tradition across time.",
+          "fact": "Weaving wreaths is a midsummer tradition.",
+          "headline": "Wreaths: tradition and material culture"
+        },
+        {
+          "title": "Midsummer Eve",
+          "greeting": "Līgo traditions can be studied through language, songs, objects, and skills. Their meaning is better understood by comparing concrete examples than by assuming a single unchanging tradition across time.",
+          "fact": "Caraway is characteristic of Jāņi cheese.",
+          "headline": "Jāņi cheese as an inherited skill"
+        },
+        {
+          "title": "Midsummer Eve",
+          "greeting": "Līgo traditions can be studied through language, songs, objects, and skills. Their meaning is better understood by comparing concrete examples than by assuming a single unchanging tradition across time.",
+          "fact": "Midsummer Eve is celebrated on June 23.",
+          "headline": "June 23 in the Latvian festive calendar"
+        },
+        {
+          "title": "Midsummer Eve",
+          "greeting": "Līgo traditions can be studied through language, songs, objects, and skills. Their meaning is better understood by comparing concrete examples than by assuming a single unchanging tradition across time.",
+          "fact": "The summer solstice and Jāņi do not always fall on the same date.",
+          "headline": "The holiday date and astronomical solstice"
+        }
+      ]
+    },
+    "tone": "warm",
+    "editorial_status": "draft"
+  },
+  {
+    "id": "jani",
+    "rule": {
+      "type": "fixed",
+      "month": 6,
+      "day": 24
+    },
+    "content": {
+      "lv": [
+        {
+          "title": "Jāņi",
+          "greeting": "Dzīva tradīcija tiek pārmantota un arī pārveidota. Jāņos ir vērts pamanīt, ko esam iemācījušies no iepriekšējām paaudzēm un ko savā praksē pievienojam paši.",
+          "fact": "Jāņus svin 24. jūnijā.",
+          "headline": "Jāņi un kultūras atmiņa"
+        },
+        {
+          "title": "Jāņi",
+          "greeting": "Dzīva tradīcija tiek pārmantota un arī pārveidota. Jāņos ir vērts pamanīt, ko esam iemācījušies no iepriekšējām paaudzēm un ko savā praksē pievienojam paši.",
+          "fact": "Ozollapu vainags ir pazīstams Jāņu simbols.",
+          "headline": "Ozols Jāņu simbolikā"
+        },
+        {
+          "title": "Jāņi",
+          "greeting": "Dzīva tradīcija tiek pārmantota un arī pārveidota. Jāņos ir vērts pamanīt, ko esam iemācījušies no iepriekšējām paaudzēm un ko savā praksē pievienojam paši.",
+          "fact": "Jāņu dziesmas pazīstamas arī kā līgotnes.",
+          "headline": "Līgotnes kā mutvārdu kultūras liecības"
+        },
+        {
+          "title": "Jāņi",
+          "greeting": "Dzīva tradīcija tiek pārmantota un arī pārveidota. Jāņos ir vērts pamanīt, ko esam iemācījušies no iepriekšējām paaudzēm un ko savā praksē pievienojam paši.",
+          "fact": "Folkloras tekstu dažādi pieraksti ļauj salīdzināt tradīcijas variantus.",
+          "headline": "Tradīcijas pārmantošana un pārmaiņas"
+        },
+        {
+          "title": "Jāņi",
+          "greeting": "Dzīva tradīcija tiek pārmantota un arī pārveidota. Jāņos ir vērts pamanīt, ko esam iemācījušies no iepriekšējām paaudzēm un ko savā praksē pievienojam paši.",
+          "fact": "Jāņu tradīcijās nozīmīga vieta ir ugunij.",
+          "headline": "Uguns svētku praksē"
+        }
+      ],
+      "en": [
+        {
+          "title": "Jāņi",
+          "greeting": "A living tradition is both inherited and reshaped. Jāņi offers an opportunity to notice what we have learned from previous generations and what we add through our own practice.",
+          "fact": "Jāņi is celebrated on June 24.",
+          "headline": "Jāņi and cultural memory"
+        },
+        {
+          "title": "Jāņi",
+          "greeting": "A living tradition is both inherited and reshaped. Jāņi offers an opportunity to notice what we have learned from previous generations and what we add through our own practice.",
+          "fact": "An oak-leaf wreath is a familiar Jāņi symbol.",
+          "headline": "The oak in Jāņi symbolism"
+        },
+        {
+          "title": "Jāņi",
+          "greeting": "A living tradition is both inherited and reshaped. Jāņi offers an opportunity to notice what we have learned from previous generations and what we add through our own practice.",
+          "fact": "Jāņi songs are also known in Latvian as līgotnes.",
+          "headline": "Līgo songs as evidence of oral culture"
+        },
+        {
+          "title": "Jāņi",
+          "greeting": "A living tradition is both inherited and reshaped. Jāņi offers an opportunity to notice what we have learned from previous generations and what we add through our own practice.",
+          "fact": "Different recorded versions of folklore texts allow variants of a tradition to be compared.",
+          "headline": "The transmission and transformation of tradition"
+        },
+        {
+          "title": "Jāņi",
+          "greeting": "A living tradition is both inherited and reshaped. Jāņi offers an opportunity to notice what we have learned from previous generations and what we add through our own practice.",
+          "fact": "Fire has an important place in Jāņi traditions.",
+          "headline": "Fire in festive practice"
+        }
+      ]
+    },
+    "tone": "warm",
+    "editorial_status": "draft"
+  },
+  {
+    "id": "halloween",
+    "rule": {
+      "type": "fixed",
+      "month": 10,
+      "day": 31
+    },
+    "content": {
+      "lv": [
+        {
+          "title": "Helovīns",
+          "greeting": "Pārņemot svētku tradīciju, sabiedrība pārņem ne tikai datumu, bet arī simbolus un to interpretācijas. Ir vērts atšķirt konkrētas paražas vēsturi no mūsdienu svētku industrijas.",
+          "fact": "Helovīnu atzīmē 31. oktobrī.",
+          "headline": "Helovīns: tradīcijas ceļš starp kultūrām"
+        },
+        {
+          "title": "Helovīns",
+          "greeting": "Pārņemot svētku tradīciju, sabiedrība pārņem ne tikai datumu, bet arī simbolus un to interpretācijas. Ir vērts atšķirt konkrētas paražas vēsturi no mūsdienu svētku industrijas.",
+          "fact": "Ķirbis botāniski ir auglis.",
+          "headline": "Ķirbis kā svētku simbols"
+        },
+        {
+          "title": "Helovīns",
+          "greeting": "Pārņemot svētku tradīciju, sabiedrība pārņem ne tikai datumu, bet arī simbolus un to interpretācijas. Ir vērts atšķirt konkrētas paražas vēsturi no mūsdienu svētku industrijas.",
+          "fact": "Izgrebti lukturi savulaik tika veidoti arī no rāceņiem.",
+          "headline": "No rāceņa līdz ķirbja lukturim"
+        },
+        {
+          "title": "Helovīns",
+          "greeting": "Pārņemot svētku tradīciju, sabiedrība pārņem ne tikai datumu, bet arī simbolus un to interpretācijas. Ir vērts atšķirt konkrētas paražas vēsturi no mūsdienu svētku industrijas.",
+          "fact": "Spoku stāsti ir daudzu kultūru folkloras daļa.",
+          "headline": "Baiļu stāsts kā kultūras forma"
+        },
+        {
+          "title": "Helovīns",
+          "greeting": "Pārņemot svētku tradīciju, sabiedrība pārņem ne tikai datumu, bet arī simbolus un to interpretācijas. Ir vērts atšķirt konkrētas paražas vēsturi no mūsdienu svētku industrijas.",
+          "fact": "Pašu gatavots tērps var dot lietām otro dzīvi.",
+          "headline": "Tērps, tēls un iztēles darbs"
+        }
+      ],
+      "en": [
+        {
+          "title": "Halloween",
+          "greeting": "When a society adopts a celebration, it adopts symbols and interpretations as well as a date. The history of a particular custom deserves to be distinguished from today’s holiday industry.",
+          "fact": "Halloween falls on October 31.",
+          "headline": "Halloween: a tradition moving between cultures"
+        },
+        {
+          "title": "Halloween",
+          "greeting": "When a society adopts a celebration, it adopts symbols and interpretations as well as a date. The history of a particular custom deserves to be distinguished from today’s holiday industry.",
+          "fact": "Botanically, a pumpkin is a fruit.",
+          "headline": "The pumpkin as a festive symbol"
+        },
+        {
+          "title": "Halloween",
+          "greeting": "When a society adopts a celebration, it adopts symbols and interpretations as well as a date. The history of a particular custom deserves to be distinguished from today’s holiday industry.",
+          "fact": "Carved lanterns were also made from turnips.",
+          "headline": "From turnip to pumpkin lantern"
+        },
+        {
+          "title": "Halloween",
+          "greeting": "When a society adopts a celebration, it adopts symbols and interpretations as well as a date. The history of a particular custom deserves to be distinguished from today’s holiday industry.",
+          "fact": "Ghost stories belong to the folklore of many cultures.",
+          "headline": "The scary story as a cultural form"
+        },
+        {
+          "title": "Halloween",
+          "greeting": "When a society adopts a celebration, it adopts symbols and interpretations as well as a date. The history of a particular custom deserves to be distinguished from today’s holiday industry.",
+          "fact": "A homemade costume can give objects a second life.",
+          "headline": "Costume, character, and imagination"
+        }
+      ]
+    },
+    "tone": "warm",
+    "editorial_status": "draft"
+  },
+  {
+    "id": "lacplesis",
+    "rule": {
+      "type": "fixed",
+      "month": 11,
+      "day": 11
+    },
+    "content": {
+      "lv": [
+        {
+          "title": "Lāčplēša diena",
+          "greeting": "Piemiņas dienā cieņa sākas ar uzmanību pret notikumiem un cilvēkiem. Līdzās simboliem ir svarīgi saglabāt precīzus faktus, personiskās liecības un izpratni par vēsturisko kontekstu.",
+          "fact": "Diena piemin Latvijas brīvības cīnītājus.",
+          "headline": "11. novembris: piemiņa un vēsturiskā precizitāte"
+        },
+        {
+          "title": "Lāčplēša diena",
+          "greeting": "Piemiņas dienā cieņa sākas ar uzmanību pret notikumiem un cilvēkiem. Līdzās simboliem ir svarīgi saglabāt precīzus faktus, personiskās liecības un izpratni par vēsturisko kontekstu.",
+          "fact": "1919. gada 11. novembrī Rīgu atbrīvoja no Bermonta karaspēka.",
+          "headline": "Rīgas aizstāvēšana 1919. gadā"
+        },
+        {
+          "title": "Lāčplēša diena",
+          "greeting": "Piemiņas dienā cieņa sākas ar uzmanību pret notikumiem un cilvēkiem. Līdzās simboliem ir svarīgi saglabāt precīzus faktus, personiskās liecības un izpratni par vēsturisko kontekstu.",
+          "fact": "Svecītes ir viena no šīs piemiņas dienas zīmēm.",
+          "headline": "Svecīte kā publiskas piemiņas zīme"
+        },
+        {
+          "title": "Lāčplēša diena",
+          "greeting": "Piemiņas dienā cieņa sākas ar uzmanību pret notikumiem un cilvēkiem. Līdzās simboliem ir svarīgi saglabāt precīzus faktus, personiskās liecības un izpratni par vēsturisko kontekstu.",
+          "fact": "Lāčplēsis ir Andreja Pumpura eposa varonis.",
+          "headline": "Lāčplēsis literatūrā un valsts atmiņā"
+        },
+        {
+          "title": "Lāčplēša diena",
+          "greeting": "Piemiņas dienā cieņa sākas ar uzmanību pret notikumiem un cilvēkiem. Līdzās simboliem ir svarīgi saglabāt precīzus faktus, personiskās liecības un izpratni par vēsturisko kontekstu.",
+          "fact": "Lāčplēša Kara ordenis bija Latvijas militārais apbalvojums.",
+          "headline": "Lāčplēša Kara ordenis un atzinība"
+        }
+      ],
+      "en": [
+        {
+          "title": "Lāčplēsis Day",
+          "greeting": "On a day of remembrance, respect begins with attention to events and people. Alongside symbols, it matters to preserve precise facts, personal accounts, and an understanding of historical context.",
+          "fact": "The day remembers those who fought for Latvia’s freedom.",
+          "headline": "November 11: remembrance and historical precision"
+        },
+        {
+          "title": "Lāčplēsis Day",
+          "greeting": "On a day of remembrance, respect begins with attention to events and people. Alongside symbols, it matters to preserve precise facts, personal accounts, and an understanding of historical context.",
+          "fact": "Riga was liberated from Bermondt’s forces on November 11, 1919.",
+          "headline": "The defence of Riga in 1919"
+        },
+        {
+          "title": "Lāčplēsis Day",
+          "greeting": "On a day of remembrance, respect begins with attention to events and people. Alongside symbols, it matters to preserve precise facts, personal accounts, and an understanding of historical context.",
+          "fact": "Candles are a symbol of this remembrance day.",
+          "headline": "The candle as a symbol of public remembrance"
+        },
+        {
+          "title": "Lāčplēsis Day",
+          "greeting": "On a day of remembrance, respect begins with attention to events and people. Alongside symbols, it matters to preserve precise facts, personal accounts, and an understanding of historical context.",
+          "fact": "Lāčplēsis is the hero of Andrejs Pumpurs’ epic.",
+          "headline": "Lāčplēsis in literature and national memory"
+        },
+        {
+          "title": "Lāčplēsis Day",
+          "greeting": "On a day of remembrance, respect begins with attention to events and people. Alongside symbols, it matters to preserve precise facts, personal accounts, and an understanding of historical context.",
+          "fact": "The Order of Lāčplēsis was a Latvian military decoration.",
+          "headline": "The Order of Lāčplēsis and recognition"
+        }
+      ]
+    },
+    "tone": "reflective",
+    "editorial_status": "draft"
+  },
+  {
+    "id": "independence",
+    "rule": {
+      "type": "fixed",
+      "month": 11,
+      "day": 18
+    },
+    "content": {
+      "lv": [
+        {
+          "title": "Latvijas proklamēšanas diena",
+          "greeting": "Latvijas valsts dibināšanu var aplūkot gan kā konkrētu 1918. gada notikumu, gan kā sākumu institūciju veidošanai. Svētku simboli iegūst dziļumu, ja pazīstam vēsturi, uz kuru tie norāda.",
+          "fact": "Latvijas Republiku proklamēja 1918. gada 18. novembrī.",
+          "headline": "18. novembris: valsts dibināšanas lēmums"
+        },
+        {
+          "title": "Latvijas proklamēšanas diena",
+          "greeting": "Latvijas valsts dibināšanu var aplūkot gan kā konkrētu 1918. gada notikumu, gan kā sākumu institūciju veidošanai. Svētku simboli iegūst dziļumu, ja pazīstam vēsturi, uz kuru tie norāda.",
+          "fact": "Proklamēšana notika tagadējā Latvijas Nacionālā teātra ēkā.",
+          "headline": "Proklamēšanas vieta kā vēstures liecība"
+        },
+        {
+          "title": "Latvijas proklamēšanas diena",
+          "greeting": "Latvijas valsts dibināšanu var aplūkot gan kā konkrētu 1918. gada notikumu, gan kā sākumu institūciju veidošanai. Svētku simboli iegūst dziļumu, ja pazīstam vēsturi, uz kuru tie norāda.",
+          "fact": "Latvijas karoga krāsas ir karmīnsarkana un balta.",
+          "headline": "Valsts simboli un to nozīme"
+        },
+        {
+          "title": "Latvijas proklamēšanas diena",
+          "greeting": "Latvijas valsts dibināšanu var aplūkot gan kā konkrētu 1918. gada notikumu, gan kā sākumu institūciju veidošanai. Svētku simboli iegūst dziļumu, ja pazīstam vēsturi, uz kuru tie norāda.",
+          "fact": "Himnas “Dievs, svētī Latviju!” autors ir Baumaņu Kārlis.",
+          "headline": "Himna kā kopīgas atmiņas daļa"
+        },
+        {
+          "title": "Latvijas proklamēšanas diena",
+          "greeting": "Latvijas valsts dibināšanu var aplūkot gan kā konkrētu 1918. gada notikumu, gan kā sākumu institūciju veidošanai. Svētku simboli iegūst dziļumu, ja pazīstam vēsturi, uz kuru tie norāda.",
+          "fact": "18. novembris Latvijā ir svētku diena.",
+          "headline": "Valsts svētki un pilsoniskā atbildība"
+        }
+      ],
+      "en": [
+        {
+          "title": "Latvian Independence Day",
+          "greeting": "The founding of Latvia can be understood both as a specific event in 1918 and as the beginning of institution-building. Festive symbols gain depth when we understand the history to which they refer.",
+          "fact": "Latvia was proclaimed on November 18, 1918.",
+          "headline": "November 18: the decision to establish a state"
+        },
+        {
+          "title": "Latvian Independence Day",
+          "greeting": "The founding of Latvia can be understood both as a specific event in 1918 and as the beginning of institution-building. Festive symbols gain depth when we understand the history to which they refer.",
+          "fact": "The proclamation took place in today’s Latvian National Theatre building.",
+          "headline": "The proclamation venue as a historical witness"
+        },
+        {
+          "title": "Latvian Independence Day",
+          "greeting": "The founding of Latvia can be understood both as a specific event in 1918 and as the beginning of institution-building. Festive symbols gain depth when we understand the history to which they refer.",
+          "fact": "Latvia’s flag is carmine and white.",
+          "headline": "State symbols and their meaning"
+        },
+        {
+          "title": "Latvian Independence Day",
+          "greeting": "The founding of Latvia can be understood both as a specific event in 1918 and as the beginning of institution-building. Festive symbols gain depth when we understand the history to which they refer.",
+          "fact": "Kārlis Baumanis wrote Latvia’s national anthem.",
+          "headline": "The anthem as part of shared memory"
+        },
+        {
+          "title": "Latvian Independence Day",
+          "greeting": "The founding of Latvia can be understood both as a specific event in 1918 and as the beginning of institution-building. Festive symbols gain depth when we understand the history to which they refer.",
+          "fact": "November 18 is a public holiday in Latvia.",
+          "headline": "National celebrations and civic responsibility"
+        }
+      ]
+    },
+    "tone": "warm",
+    "editorial_status": "draft"
+  },
+  {
+    "id": "christmas",
+    "rule": {
+      "type": "fixed",
+      "month": 12,
+      "day": 25
+    },
+    "content": {
+      "lv": [
+        {
+          "title": "Ziemassvētki",
+          "greeting": "Ziemassvētku pieredze ietver reliģiskas, ģimenes un vietējās tradīcijas. Tās nav jāpadara vienādas: konkrēta priekšmeta vai paražas vēsture ļauj ieraudzīt šo dažādību precīzāk.",
+          "fact": "Ziemassvētku tradīcijās Latvijā sastopama bluķa vilkšana.",
+          "headline": "Ziemassvētki: tradīciju daudzslāņainība"
+        },
+        {
+          "title": "Ziemassvētki",
+          "greeting": "Ziemassvētku pieredze ietver reliģiskas, ģimenes un vietējās tradīcijas. Tās nav jāpadara vienādas: konkrēta priekšmeta vai paražas vēsture ļauj ieraudzīt šo dažādību precīzāk.",
+          "fact": "Piparkūkas ir iecienīts svētku cienasts.",
+          "headline": "Piparkūkas un svētku garšas atmiņa"
+        },
+        {
+          "title": "Ziemassvētki",
+          "greeting": "Ziemassvētku pieredze ietver reliģiskas, ģimenes un vietējās tradīcijas. Tās nav jāpadara vienādas: konkrēta priekšmeta vai paražas vēsture ļauj ieraudzīt šo dažādību precīzāk.",
+          "fact": "Salmu puzuri ir tradicionāli telpu rotājumi.",
+          "headline": "Puzurs kā materiālās kultūras piemērs"
+        },
+        {
+          "title": "Ziemassvētki",
+          "greeting": "Ziemassvētku pieredze ietver reliģiskas, ģimenes un vietējās tradīcijas. Tās nav jāpadara vienādas: konkrēta priekšmeta vai paražas vēsture ļauj ieraudzīt šo dažādību precīzāk.",
+          "fact": "Masku gājieni ir daļa no latviešu ziemas tradīcijām.",
+          "headline": "Maskošanās latviešu ziemas tradīcijās"
+        },
+        {
+          "title": "Ziemassvētki",
+          "greeting": "Ziemassvētku pieredze ietver reliģiskas, ģimenes un vietējās tradīcijas. Tās nav jāpadara vienādas: konkrēta priekšmeta vai paražas vēsture ļauj ieraudzīt šo dažādību precīzāk.",
+          "fact": "25. un 26. decembris Latvijā ir svētku dienas.",
+          "headline": "Svētku laiks un kopienas attiecības"
+        }
+      ],
+      "en": [
+        {
+          "title": "Christmas",
+          "greeting": "Christmas brings together religious, family, and local traditions. These do not need to be made uniform: the history of a particular object or custom can help reveal that diversity more precisely.",
+          "fact": "Log dragging is part of Latvian Christmas tradition.",
+          "headline": "Christmas: layers of tradition"
+        },
+        {
+          "title": "Christmas",
+          "greeting": "Christmas brings together religious, family, and local traditions. These do not need to be made uniform: the history of a particular object or custom can help reveal that diversity more precisely.",
+          "fact": "Gingerbread is a popular festive treat.",
+          "headline": "Gingerbread and the memory of festive flavours"
+        },
+        {
+          "title": "Christmas",
+          "greeting": "Christmas brings together religious, family, and local traditions. These do not need to be made uniform: the history of a particular object or custom can help reveal that diversity more precisely.",
+          "fact": "Straw mobiles are traditional decorations.",
+          "headline": "Straw mobiles as material culture"
+        },
+        {
+          "title": "Christmas",
+          "greeting": "Christmas brings together religious, family, and local traditions. These do not need to be made uniform: the history of a particular object or custom can help reveal that diversity more precisely.",
+          "fact": "Masked processions belong to Latvian winter traditions.",
+          "headline": "Masking in Latvian winter traditions"
+        },
+        {
+          "title": "Christmas",
+          "greeting": "Christmas brings together religious, family, and local traditions. These do not need to be made uniform: the history of a particular object or custom can help reveal that diversity more precisely.",
+          "fact": "December 25 and 26 are public holidays in Latvia.",
+          "headline": "The festive season and community relationships"
+        }
+      ]
+    },
+    "tone": "warm",
+    "editorial_status": "draft"
+  },
+  {
+    "id": "new_year_eve",
+    "rule": {
+      "type": "fixed",
+      "month": 12,
+      "day": 31
+    },
+    "content": {
+      "lv": [
+        {
+          "title": "Vecgada vakars",
+          "greeting": "Gada izvērtējums ir vērtīgs tad, ja tas ir godīgs. Līdzās sasniegumiem vieta ir arī kļūdām, no kurām izdarīti konkrēti secinājumi, un darbam, kas vēl jāturpina.",
+          "fact": "Vecgada vakars ir 31. decembrī.",
+          "headline": "Gada noslēgums: izvērtējums pirms solījumiem"
+        },
+        {
+          "title": "Vecgada vakars",
+          "greeting": "Gada izvērtējums ir vērtīgs tad, ja tas ir godīgs. Līdzās sasniegumiem vieta ir arī kļūdām, no kurām izdarīti konkrēti secinājumi, un darbam, kas vēl jāturpina.",
+          "fact": "Gada noslēgumā var atcerēties arī mazos panākumus.",
+          "headline": "Kā novērtēt nelielu progresu"
+        },
+        {
+          "title": "Vecgada vakars",
+          "greeting": "Gada izvērtējums ir vērtīgs tad, ja tas ir godīgs. Līdzās sasniegumiem vieta ir arī kļūdām, no kurām izdarīti konkrēti secinājumi, un darbam, kas vēl jāturpina.",
+          "fact": "Pusnakts dažādās laika joslās pienāk atšķirīgā brīdī.",
+          "headline": "Laika joslas un kopīgā pusnakts ideja"
+        },
+        {
+          "title": "Vecgada vakars",
+          "greeting": "Gada izvērtējums ir vērtīgs tad, ja tas ir godīgs. Līdzās sasniegumiem vieta ir arī kļūdām, no kurām izdarīti konkrēti secinājumi, un darbam, kas vēl jāturpina.",
+          "fact": "Latvijā ziemā lieto Austrumeiropas laiku.",
+          "headline": "Latvijas laiks gada mijā"
+        },
+        {
+          "title": "Vecgada vakars",
+          "greeting": "Gada izvērtējums ir vērtīgs tad, ja tas ir godīgs. Līdzās sasniegumiem vieta ir arī kļūdām, no kurām izdarīti konkrēti secinājumi, un darbam, kas vēl jāturpina.",
+          "fact": "Kopīga maltīte var kļūt par ģimenes tradīciju.",
+          "headline": "Kopīgā galda sociālā nozīme"
+        }
+      ],
+      "en": [
+        {
+          "title": "New Year’s Eve",
+          "greeting": "A year-end assessment is useful when it is honest. Alongside achievements, there is room for mistakes that led to concrete lessons and work that still needs to continue.",
+          "fact": "New Year’s Eve falls on December 31.",
+          "headline": "Year’s end: assessment before promises"
+        },
+        {
+          "title": "New Year’s Eve",
+          "greeting": "A year-end assessment is useful when it is honest. Alongside achievements, there is room for mistakes that led to concrete lessons and work that still needs to continue.",
+          "fact": "Small achievements also deserve a year-end reflection.",
+          "headline": "Recognising incremental progress"
+        },
+        {
+          "title": "New Year’s Eve",
+          "greeting": "A year-end assessment is useful when it is honest. Alongside achievements, there is room for mistakes that led to concrete lessons and work that still needs to continue.",
+          "fact": "Midnight arrives at different moments across time zones.",
+          "headline": "Time zones and the idea of a shared midnight"
+        },
+        {
+          "title": "New Year’s Eve",
+          "greeting": "A year-end assessment is useful when it is honest. Alongside achievements, there is room for mistakes that led to concrete lessons and work that still needs to continue.",
+          "fact": "Latvia uses Eastern European Time in winter.",
+          "headline": "Latvian time at the turn of the year"
+        },
+        {
+          "title": "New Year’s Eve",
+          "greeting": "A year-end assessment is useful when it is honest. Alongside achievements, there is room for mistakes that led to concrete lessons and work that still needs to continue.",
+          "fact": "A shared meal can become a family tradition.",
+          "headline": "The social meaning of a shared table"
+        }
+      ]
+    },
+    "tone": "warm",
+    "editorial_status": "draft"
+  },
+  {
+    "id": "good_friday",
+    "rule": {
+      "type": "easter",
+      "offset": -2
+    },
+    "content": {
+      "lv": [
+        {
+          "title": "Lielā piektdiena",
+          "greeting": "Šodien atstājam vietu klusumam un cieņai pret to, kā katrs šo dienu piedzīvo.",
+          "fact": "Lielā piektdiena ir divas dienas pirms Lieldienu svētdienas.",
+          "headline": "Diena, kurai nevajag skaļu balsi."
+        }
+      ],
+      "en": [
+        {
+          "title": "Good Friday",
+          "greeting": "Today, make room for quiet and respect for the different ways people observe this day.",
+          "fact": "Good Friday is two days before Easter Sunday.",
+          "headline": "A day that needs no loud voice."
+        }
+      ]
+    },
+    "tone": "reflective",
+    "editorial_status": "draft"
+  },
+  {
+    "id": "easter",
+    "rule": {
+      "type": "easter",
+      "offset": 0
+    },
+    "content": {
+      "lv": [
+        {
+          "title": "Lieldienas",
+          "greeting": "Lieldienu galdā var satikties mazs eksperiments un sena tradīcija. Katra ola iznāk citāda.",
+          "fact": "Olu krāsošana sīpolu mizās ir pazīstama Lieldienu tradīcija.",
+          "headline": "Viena sīpola miza, vesela krāsu palete."
+        }
+      ],
+      "en": [
+        {
+          "title": "Easter",
+          "greeting": "An Easter table can bring together a small experiment and an old tradition. Every egg turns out differently.",
+          "fact": "Dyeing eggs with onion skins is a familiar Easter tradition.",
+          "headline": "One onion skin, a whole palette."
+        }
+      ]
+    },
+    "tone": "warm",
+    "editorial_status": "draft"
+  },
+  {
+    "id": "easter_monday",
+    "rule": {
+      "type": "easter",
+      "offset": 1
+    },
+    "content": {
+      "lv": [
+        {
+          "title": "Otrās Lieldienas",
+          "greeting": "Pēc lielās rosības šodien pietiek ar vienu vienkāršu, kopīgu brīdi.",
+          "fact": "Otrās Lieldienas Latvijā ir svētku diena.",
+          "headline": "Svētku otrā elpa."
+        }
+      ],
+      "en": [
+        {
+          "title": "Easter Monday",
+          "greeting": "After the bustle, a simple moment together can be enough.",
+          "fact": "Easter Monday is a public holiday in Latvia.",
+          "headline": "A holiday’s second breath."
+        }
+      ]
+    },
+    "tone": "warm",
+    "editorial_status": "draft"
+  },
+  {
+    "id": "mothers",
+    "rule": {
+      "type": "nth_weekday",
+      "month": 5,
+      "weekday": 6,
+      "nth": 2
+    },
+    "content": {
+      "lv": [
+        {
+          "title": "Mātes diena",
+          "greeting": "Šī diena katram var nozīmēt ko citu. Atstāsim vietu pateicībai, atmiņām un arī klusumam.",
+          "fact": "Latvijā Mātes diena ir maija otrajā svētdienā.",
+          "headline": "Rūpes, kas bieži paliek aiz kadra."
+        }
+      ],
+      "en": [
+        {
+          "title": "Mother’s Day",
+          "greeting": "This day can mean different things to different people. Leave room for gratitude, memories, and silence, too.",
+          "fact": "Latvia celebrates Mother’s Day on the second Sunday of May.",
+          "headline": "Care that often stays out of the frame."
+        }
+      ]
+    },
+    "tone": "reflective",
+    "editorial_status": "draft"
+  },
+  {
+    "id": "christmas_eve",
+    "rule": {
+      "type": "fixed",
+      "month": 12,
+      "day": 24
+    },
+    "content": {
+      "lv": [
+        {
+          "title": "Ziemassvētku vakars",
+          "greeting": "Gaismiņas var būt dažas. Galds var būt mazs. Arī tā var būt īsta svētku sajūta.",
+          "fact": "24. decembris Latvijā ir svētku diena.",
+          "headline": "Vakars bez prasības būt nevainojamam."
+        }
+      ],
+      "en": [
+        {
+          "title": "Christmas Eve",
+          "greeting": "A few lights. A small table. That can still be a real holiday.",
+          "fact": "December 24 is a public holiday in Latvia.",
+          "headline": "An evening with no requirement to be perfect."
+        }
+      ]
+    },
+    "tone": "warm",
+    "editorial_status": "draft"
+  },
+  {
+    "id": "boxing_day",
+    "rule": {
+      "type": "fixed",
+      "month": 12,
+      "day": 26
+    },
+    "content": {
+      "lv": [
+        {
+          "title": "Otrie Ziemassvētki",
+          "greeting": "Šodien nekur nav jāsteidzas tikai tāpēc, ka kalendārā ir svētki.",
+          "fact": "Svētku laiks var būt arī klusas atpūtas brīdis.",
+          "headline": "Lēnāks rīts arī ir tradīcija."
+        }
+      ],
+      "en": [
+        {
+          "title": "Second Day of Christmas",
+          "greeting": "A holiday on the calendar is not a reason to rush.",
+          "fact": "The holiday season can also be a time for quiet rest.",
+          "headline": "A slower morning can be a tradition, too."
+        }
+      ]
+    },
+    "tone": "warm",
+    "editorial_status": "draft"
+  }
+]

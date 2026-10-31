@@ -1,0 +1,23 @@
+services:
+  bot:
+    build: .
+    init: true
+    restart: unless-stopped
+    env_file: .env
+    environment:
+      DATABASE_PATH: /app/runtime/svetki.sqlite
+    volumes:
+      - bot-data:/app/runtime
+    healthcheck:
+      test: ["CMD", "python", "-c", "import pathlib,time; p=pathlib.Path('/app/runtime/heartbeat'); assert time.time()-float(p.read_text()) < 120"]
+      interval: 60s
+      timeout: 5s
+      retries: 3
+      start_period: 120s
+    logging:
+      driver: json-file
+      options:
+        max-size: 5m
+        max-file: '3'
+volumes:
+  bot-data:
