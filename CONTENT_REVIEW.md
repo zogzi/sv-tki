@@ -1,8 +1,13 @@
-# Satura melnraksti pārskatīšanai
+# Draft posts for owner review
 
-Virziens: vēsturiska precizitāte, izziņa, kvalitāte un atbildīga rīcība. Bez piespiedu spēlēm, sentimentāliem saukļiem vai obligātiem iesaistes jautājumiem.
+The owner will write the final version. These are the existing Latvian draft posts,
+not approved copy. They are retained for reference; this revision does not rewrite
+them. Edit `data/holidays.json` and `data/editions.json` to change the bot's content.
+This snapshot does not update automatically when those files change.
 
-Šis ir satura pārskats, nevis jau publicētu vai pilnībā pārbaudītu tekstu saraksts. Rediģējamie avoti: `data/holidays.json` un `data/editions.json`. Pārskats neatjaunojas automātiski pēc JSON izmaiņām. Pirms izvietošanas pārbaudi faktus un piemērotību savai kopienai.
+Repository documentation is in English; the preview below retains Latvian because
+that is the bot's primary posting language. Historical details and references still
+need editorial review before deployment.
 
 ## 2026. gada Līgo izmēģinājuma redakcija
 

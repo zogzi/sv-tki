@@ -1,84 +1,87 @@
 # Svētki
 
-Latvisks Discord svētku bots ar Python 3.12, discord.py, SQLite un Europe/Riga kalendāru. Plānots vienam serverim un **vienam vienlaicīgam bota procesam**. Ziņām nav vajadzīgi lietotāji tiešsaistē. Krievu tulkojumu nav; citām Discord lokalizācijām izmanto angļu valodu.
+A Python 3.12 Discord celebration bot for a Latvian-speaking community. Scheduled posts use **Europe/Riga** time, SQLite stores delivery history and preferences, and the bot uses one process for one server. Posts are Latvian by default, with English translations. Other Discord locales fall back to English.
 
-Iekļauti 17 svētki/atzīmējamās dienas; 11 no tām ir pieci satura varianti katrā no divām valodām (lv/en). Lieldienas aprēķina Gregora kalendārā; Mātes diena ir maija otrajā svētdienā. Šis ir apsveikumu kalendārs, nevis juridisks darba dienu kalendārs.
+**This is a working foundation, not a finished editorial product or a deployed service.** The owner will write the final voice and revise the content. Existing posts are drafts. Live Discord validation, hosting selection and source-backed future-year writing remain outstanding; see [project status](docs/PROJECT_STATUS.md).
 
-## Discord iestatīšana
+- [AI, subscriptions, costs and future-year relevance](docs/AI.md)
+- [Concrete hosting candidates and deployment](DEPLOYMENT.md)
+- [Existing content drafts](CONTENT_REVIEW.md)
+- [Owner-editable AI writing brief](data/editorial_brief.md)
 
-1. Atver https://discord.com/developers/applications un izveido aplikāciju “Svētki”. Sadaļā Bot izveido botu un iegūsti tokenu. Glabā to tikai `.env`; ja tokens noplūst, nekavējoties atiestati to portālā.
-2. **Neieslēdz privileged intents.** Bots izmanto `Intents(guilds=True)` (tikai neprivileģētais Guilds intent): nevajag Message Content, Server Members vai Presence. Dalību serverī vārda dienai pārbauda ar atsevišķu REST pieprasījumu.
-3. OAuth2 → URL Generator: scopes `bot`, `applications.commands`; bot permissions **View Channels**, **Send Messages**, **Embed Links**, **Read Message History**. Vēsture vajadzīga avāriju atkopšanai. Administratora atļauju botam nedod.
-4. Piemēra uzaicinājums (aizvieto APPLICATION_ID):
+## Discord setup
+
+1. Create an application in the [Discord Developer Portal](https://discord.com/developers/applications), add a bot, and obtain its token. Keep it in `.env` or secure environment settings. Reset it if exposed.
+2. Leave **privileged intents disabled**. The bot uses only the nonprivileged Guilds intent: no Message Content, Server Members or Presence intent. Name-day membership checks use individual REST requests.
+3. Generate an OAuth2 invite with scopes `bot` and `applications.commands`. Permissions: **View Channels**, **Send Messages**, **Embed Links**, **Read Message History**. History access is required to reconcile uncertain sends after a crash. Do not grant the bot Administrator.
+4. Invite URL, replacing `APPLICATION_ID`:
    `https://discord.com/oauth2/authorize?client_id=APPLICATION_ID&scope=bot%20applications.commands&permissions=84992`
-5. Discord lietotāja iestatījumos ieslēdz Developer Mode. Nokopē servera un teksta kanāla ID; ieraksti `.env` laukos `GUILD_ID` un `DEFAULT_CHANNEL_ID`. Pārbaudi arī kanāla atļauju pārrakstījumus.
+5. Enable Developer Mode in Discord, copy the server/channel IDs, and configure `GUILD_ID` and `DEFAULT_CHANNEL_ID`. Check channel permission overrides too.
 
-## Lokāli
+## Run locally
 
 ```sh
-cd sv-tki
 python3.12 -m venv .venv
 . .venv/bin/activate
 pip install -e '.[test]'
 cp .env.example .env
-# Rediģē .env un ievadi tokenu un abus ID.
+# Edit .env: DISCORD_TOKEN, GUILD_ID, DEFAULT_CHANNEL_ID.
 pytest -q
 python -m svetki.bot
 ```
 
-Vienmēr palaid no repozitorija saknes. SQLite un rotējošie JSON žurnāli atrodas `runtime/`. Atkarību precīzās pārbaudītās versijas var fiksēt savā izvietošanas procesā; pyproject izmanto savietojamības intervālus. Bez tokena programma paziņo trūkstošos laukus un atgriež statusu 2.
+Run from the repository root. Database files and rotating JSON logs live in ignored `runtime/`. Missing required configuration produces an explicit log and exit status 2. No AI key is needed for the normal workflow. Do not run another copy with the same server/token while the production bot is running.
 
-## Komandas
+## Commands
 
-- `/svetki today` — šodienas svētki; `/svetki next` — nākamie pieci pēc šodienas.
-- `/svetki test holiday:halloween` — privāts priekšskatījums, tikai administratoram; nemaina nosūtīšanas žurnālu. Nezināms ID parāda pieejamos ID.
-- `/svetki config channel:#svetki post_time:09:00 lang:lv` — tikai administratoram. Laiks vienmēr Europe/Riga, arī pēc vasaras laika maiņas.
-- `/svetki config holiday:halloween enabled:false` — izslēdz konkrētus svētkus. Bez argumentiem parāda iestatījumus.
-- `/valoda lang:en` — saglabā lietotāja izvēli (`lv`, `en`). Pretējā gadījumā privātajām atbildēm izmanto interaction.locale, nezināmai valodai angļu.
-- `/vardadiena enabled:true name:Anna` un `enabled:false` — pieteikt/atcelt sveicienu.
+| Command | Purpose |
+| --- | --- |
+| `/svetki today` | List today's celebrations privately. |
+| `/svetki next` | List the next five celebrations after today. |
+| `/svetki test holiday:ligo` | Administrator-only private preview; does not mark the holiday as sent or call AI. Unknown IDs return the available IDs. |
+| `/svetki config channel:#svetki post_time:09:00 lang:lv` | Administrator-only server settings; time is always Europe/Riga. |
+| `/svetki config holiday:halloween enabled:false` | Enable/disable a particular holiday. With no arguments, show settings. |
+| `/valoda lang:en` | Save `lv` or `en`; otherwise use the interaction locale. |
+| `/vardadiena enabled:true name:Anna` | Opt in, if that name is present in the loaded dataset. Use `enabled:false` to opt out. |
 
-Plānotie apsveikumi ir servera valodā (sākumā lv). Poga “🌍 Show in my language” atbild privāti izvēlētajā valodā. Tā rāda attiecīgā varianta redakcionālo tulkojumu, arī ja sākotnējais sveiciens radīts ar AI. Pogas saglabā darbību pēc restarta.
+The language button responds ephemerally. It shows the authored translation of the same variant/year, **not an exact translation of an AI-generated introduction**. Persistent buttons survive restarts while their content remains available.
 
-## Kalendāra paplašināšana
+## Content and calendar
 
-`data/holidays.json`: unikāls `id`, `rule` un `content` ar `title`, `headline`, `greeting`, `fact` un izvēles `prompt`, `fact_label`, `prompt_label`. `fixed` izmanto `month/day`; `easter` izmanto dienu `offset`; `nth_weekday` izmanto `month/weekday/nth`, kur pirmdiena ir 0. Rediģējot saglabā esošo ID, jo tas identificē nosūtīšanas vēsturi. Varianti rotē secīgi; pēc pieciem gadiem piecu variantu kopums sākas no jauna. Pievieno jaunus variantus, lai ciklu pagarinātu.
+`data/holidays.json` contains 17 celebrations/observances. Eleven have at least five variants in both languages. Gregorian Easter is calculated; Mother's Day is the second Sunday in May. This is a celebration calendar, not a legal working-day calendar.
 
-Vārda dienu pilns licencēts kalendārs nav pievienots. Ielādes vieta ir `data/namedays.json`, sākumā `{}`. Ievieto pārbaudītu datu kopu ar atbilstošu lietošanas licenci, piemēram, struktūrā `{"07-26": ["Anna"]}`. Atslēgas ir `MM-DD`, vērtības — precīzu vārdu saraksti; 29. februāris tiek svinēts tikai garajā gadā. Pēc izmaiņām restartē botu (Docker gadījumā pārbūvē attēlu). Neielādēta vārda pieteikšanu bots noraida ar paskaidrojumu. Vārda dienu sveicieni ir latviski un neizmanto paziņojošu @pieminējumu.
+Date rules are `fixed` (`month`, `day`), `easter` (`offset` in days), or `nth_weekday` (`month`, `weekday`, `nth`; Monday = 0). Content fields include `title`, `headline`, `greeting`, `fact`, optional section labels and sources. Keep IDs stable because they identify delivery history. Variants rotate; a finite pool eventually repeats.
 
-## Izmēģinām saturu kā atsevišķus stāstus
+`data/editions.json` can replace a holiday's content for a specified year, with both `lv` and `en` entries. It does not research that year's events. The included `calendar_context` example calculates a weekday/date only. Source links in authored files are references, not proof that the bot has fetched or verified them.
 
-Svētki nenosaka vienu obligātu formātu. Satura virziens: vēsturiska precizitāte, izziņa, kvalitāte un atbildīga rīcība. Līgo var aplūkot caur folkloras avotu izpēti vai konkrētas tradīcijas izcelsmi. Lāčplēša dienai ir mierīgāks tonis. Sadaļu nosaukumus var pielāgot konkrētajam tekstam. Iesaistes jautājumi nav obligāti, un sākotnējos tekstos tie ir izņemti. Teksti ir redakcionāli melnraksti (`editorial_status: draft`), kurus īpašnieks pārskata pirms izvietošanas; šis marķieris nav tehnisks publicēšanas bloķētājs.
+The existing text is marked `editorial_status: draft`. This is a documentation marker, **not a publication gate**. Before deployment, replace/review the drafts or disable the affected holidays. The editorial brief affects optional AI introductions; it does not automatically rewrite saved posts.
 
-`data/editions.json` ļauj konkrētam gadam un svētkiem aizstāt parasto saturu: `"2026" → "ligo" → {"lv": [...], "en": [...]}`. Iekļauts izmēģinājuma Līgo teksts par tautasdziesmu kā vēstures avotu ar saiti uz Dainu skapi. `calendar_context: true` tam pievieno aprēķinātu šī gada datumu un nedēļas dienu. Nākamais gads bez īpašas redakcijas izmanto parasto variantu kopumu. Pogas tulkojums saglabā sākotnējā ieraksta gadu arī pēc restarta.
+### Name days
 
-Aktualitātes netiek izgudrotas vai automātiski ņemtas no interneta. Ja gribi sasaisti ar attiecīgā gada notikumu, pievieno pārbaudītu redakciju abās valodās un norādi avotu tekstā. AI režīms maina tikai īso ievadu; tas nerada ziņas vai jaunus vēstures faktus.
+`data/namedays.json` starts as `{}`. Supply a checked, appropriately licensed `MM-DD` → list-of-names dataset; for example, `{"07-26": ["Anna"]}` demonstrates the format. Restart after editing; rebuild the Docker image when its bundled data changes. February 29 entries occur only in leap years. The bot rejects opt-ins for names it cannot find. Name-day greetings are Latvian and do not send notification mentions.
 
-## Uzticamība
+## Optional AI
 
-Ik pēc 30 sekundēm bots pārbauda šodienas svētkus. Pēc plānotā laika arī restartēts bots nosūta nokavēto šīs dienas ziņu; iepriekšējās dienas neatjauno. Atsevišķas kļūdas tiek žurnalētas, un pārējie darbi turpinās. Mainot laiku uz agrāku, apsveikums var tikt nosūtīts nākamajā ciklā.
+A running bot does **not** use your ChatGPT Pro or Codex session. It calls a separately configured API, or an explicitly configured local compatible server. Ending a chat/coding subscription does not by itself stop a separately hosted bot; API access, API billing and hosting still need to remain active.
 
-SQLite glabā rezervētu sūtījumu pirms Discord izsaukuma un ziņas ID pēc tā. Ja process apstājas pa vidu, pirms atkārtotas sūtīšanas bots meklē savu unikālo marķieri šīs dienas kanāla vēsturē. Ja vēsturi nevar nolasīt, tas nesūta un mēģina nākamajā ciklā. Neizdzēs marķierus vai datubāzi un nedarbini vairākas replikas. Discord sūtīšana un SQLite nav kopīga transakcija: absolūtu “exactly once” garantiju ārējais API nepiedāvā; administratora izdzēsta nenofiksēta ziņa var tikt nosūtīta atkal.
+AI is disabled by default. Current AI support rewrites only an introduction using the authored facts and actual post date. It does not search the web or solve future-year relevance. You can edit `data/editorial_brief.md`, `AI_BASE_URL`, `AI_MODEL` and the API key without changing the application code. Successful introductions are cached in SQLite, and failures fall back to saved content. Read [AI.md](docs/AI.md) before enabling it, especially its cost-control limitations.
 
-Healthcheck izmanto plānotāja sirdspukstu, kas atjaunojas tikai ar gatavu Discord savienojumu. Tas nav pilna kanāla atļauju pārbaude; pārbaudi arī žurnālus. Docker pats nepārstartē `unhealthy` konteineru — `restart: unless-stopped` pārstartē beigušos procesu. Uzraugi unhealthy stāvokli un novērs tā cēloni.
+## Reliability and Docker
 
-## Izvēles AI
+The scheduler checks every 30 seconds. After the configured posting time, it catches up missed posts for the same Riga calendar day, including after restart. It does not backfill previous days. Individual job failures are logged and isolated.
 
-Sākumā **izslēgts**, un bots pilnībā strādā bez AI atslēgas. Lai ieslēgtu, `.env` norādi `AI_ENABLED=true`, `OPENAI_API_KEY`, modeli un budžeta parametrus. Izmanto OpenAI HTTPS API, 15 sekunžu timeout un ne vairāk kā 180 atbildes tokenus. AI rada tikai īsu sveicienu; fakti paliek no vietējā kalendāra, lai mazinātu izdomātu apgalvojumu risku. Kļūdas vai sasniegts limits pārslēdz uz vietējo saturu.
-
-SQLite dienā rezervē `AI_REQUEST_BUDGET_USD` katram mēģinājumam, arī neveiksmīgam, un ierobežo rezervāciju summu ar `AI_DAILY_BUDGET_USD`, papildus `AI_DAILY_REQUEST_CAP`. Dienas robeža ir Rīgas pusnakts. Pārbaudi modeļa aktuālo cenu pie pakalpojuma sniedzēja un iestati rezervāciju vismaz pilna pieprasījuma maksimālajām izmaksām. Tas ir konservatīvas rezervācijas limits, nevis pakalpojuma sniedzēja rēķina mērījums; arī pie sniedzēja iestati izdevumu kontroli. Atslēgas nekad neliec Discord komandās vai repozitorijā.
-
-## Docker
+SQLite reserves a send before calling Discord and records the message ID afterward. An uncertain send is reconciled against the bot's marker in that day's channel history before retrying. Completed posts avoid further channel API calls. If history cannot be read, the bot defers the uncertain send. Use **one replica** and retain the database. Discord and SQLite cannot share an atomic transaction; deleting an uncertain message or restoring old state can still cause a repeat.
 
 ```sh
 cp .env.example .env
-# Aizpildi .env.
+# Configure credentials and IDs. Review drafts before starting.
 docker compose up -d --build
 docker compose logs -f --tail=100
 docker compose ps
 ```
 
-Dati paliek `bot-data` sējumā. `docker compose down` tos saglabā; **neizmanto `down -v`**, ja gribi paturēt vēsturi. Pēc koda/datu maiņas: `docker compose up -d --build`. Izvietošanu un rezerves kopijas skatīt [DEPLOYMENT.md](DEPLOYMENT.md).
+SQLite/logs persist in `bot-data`. `docker compose down` preserves the volume; `down -v` deletes it. Docker restarts exited processes with `unless-stopped`. The healthcheck detects a stale scheduler/connection heartbeat, but Docker does **not** automatically restart an unhealthy, still-running container. Monitor health and logs. See [deployment and backups](DEPLOYMENT.md).
 
-## Pieņēmumi un pārbaudes
+## Validation
 
-Viens serveris, viens process, viens kopīgs apsveikumu kanāls; pilns vārda dienu kalendārs ir lietotāja ielādējams. AI ir izvēles OpenAI integrācija. Tests bez tīkla pārbauda datumu loģiku, SQLite, satura apjomu, nosūtīšanu un avārijas atkopšanu. `pytest -q` neprasa Discord tokenu. Īstais savienojums un slash komandu reģistrācija jāpārbauda savā testa serverī ar derīgu tokenu.
+`pytest -q` runs offline calendar, persistence, recovery, scheduler and AI-configuration tests. Mocked API tests are not a live provider test. A real token/server is still needed to validate Gateway connectivity, permissions, command sync and actual Discord rendering. No production hosting account or AI service has been provisioned by this repository.

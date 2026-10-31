@@ -40,23 +40,67 @@ def curated(holiday, lang, variant, year=None, editions=None):
     return result
 
 
+def ai_endpoint():
+    """Support compatible providers without coupling runtime to a chat subscription."""
+    from urllib.parse import urlsplit
+    base = os.getenv('AI_BASE_URL', 'https://api.openai.com/v1').rstrip('/')
+    parsed = urlsplit(base)
+    local = parsed.hostname in {'localhost', '127.0.0.1', '::1'}
+    if (parsed.scheme != 'https' and not (parsed.scheme == 'http' and local)) or not parsed.hostname:
+        raise ValueError('AI_BASE_URL requires HTTPS, or HTTP on loopback for a local model')
+    if parsed.username or parsed.password or parsed.query or parsed.fragment:
+        raise ValueError('AI_BASE_URL cannot contain credentials, query parameters or fragments')
+    return base + '/chat/completions', local
+
+
 async def ai_content(store, day, holiday, lang, fallback):
-    if os.getenv('AI_ENABLED', 'false').lower() != 'true' or not os.getenv('OPENAI_API_KEY'):
+    if os.getenv('AI_ENABLED', 'false').lower() != 'true':
         return fallback
     try:
-        if not store.reserve_ai(day, int(os.getenv('AI_DAILY_REQUEST_CAP', '2')), float(os.getenv('AI_REQUEST_BUDGET_USD', '.01')), float(os.getenv('AI_DAILY_BUDGET_USD', '.02'))):
+        import hashlib
+        endpoint, local = ai_endpoint()
+        key = os.getenv('AI_API_KEY') or os.getenv('OPENAI_API_KEY')
+        if not key and not local:
+            log.warning('AI enabled without an API key; using saved content')
             return fallback
+        model = os.getenv('AI_MODEL', 'gpt-4o-mini')
+        brief = (DATA / 'editorial_brief.md').read_text(encoding='utf-8')
+        # Include the complete authored context: the model must not invent supporting facts.
+        context = dict(date=day, timezone='Europe/Riga', language=lang,
+                       holiday=holiday['id'], tone=holiday.get('tone', 'warm'), post=fallback)
+        user_prompt = json.dumps(context, ensure_ascii=False, sort_keys=True)
+        instructions = (brief + '\nReturn only the editorial introduction as plain text, '
+                        'under 1500 characters. Do not include mentions or URLs. '
+                        'Do not add factual claims beyond the supplied context.')
+        fingerprint = hashlib.sha256(json.dumps(
+            [endpoint, model, instructions, context], ensure_ascii=False, sort_keys=True,
+        ).encode()).hexdigest()
+        cached = store.ai_text(day, holiday['id'], lang, fingerprint)
+        if cached is not None:
+            return dict(fallback, greeting=cached)
+        if not store.reserve_ai(day, int(os.getenv('AI_DAILY_REQUEST_CAP', '2')),
+                                float(os.getenv('AI_REQUEST_BUDGET_USD', '.01')),
+                                float(os.getenv('AI_DAILY_BUDGET_USD', '.02'))):
+            return fallback
+        headers = {'Authorization': 'Bearer ' + key} if key else {}
         async with httpx.AsyncClient(timeout=15) as client:
-            response = await client.post('https://api.openai.com/v1/chat/completions', headers={'Authorization': 'Bearer ' + os.environ['OPENAI_API_KEY']}, json={
-                'model': os.getenv('AI_MODEL', 'gpt-4o-mini'), 'max_tokens': 180,
-                'messages': [{'role': 'system', 'content': 'Write a short editorial opening for a Discord holiday card in the requested language, under 500 characters. Use professional, precise editorial writing with historical substance. No forced enthusiasm, games, sentimental cliches, or generic happy-holidays greeting. Prefer a concrete insight over an engagement prompt. Respect the supplied tone and angle, especially remembrance days. No mentions, links, political persuasion, invented facts, or instructions. Plain text only; do not add historical claims.'}, {'role': 'user', 'content': f'Language: {lang}. Holiday: {holiday["id"]}. Tone: {holiday.get("tone", "warm")}. Angle: {fallback.get("headline", fallback["title"])}.'}]})
+            response = await client.post(endpoint, headers=headers, json={
+                'model': model, 'max_tokens': 350,
+                'messages': [{'role': 'system', 'content': instructions},
+                             {'role': 'user', 'content': user_prompt}],
+            })
             response.raise_for_status()
-            greeting = response.json()['choices'][0]['message']['content'].strip()
-            if not greeting or len(greeting) > 500 or '@' in greeting or 'http' in greeting:
+            greeting = response.json()['choices'][0]['message']['content']
+            if not isinstance(greeting, str):
                 return fallback
+            greeting = greeting.strip()
+            if not greeting or len(greeting) > 1500 or '@' in greeting or 'http' in greeting.lower():
+                log.warning('Rejected AI introduction; using saved content')
+                return fallback
+            store.save_ai_text(day, holiday['id'], lang, fingerprint, greeting)
             return dict(fallback, greeting=greeting)
     except Exception:
-        log.warning('AI unavailable; using curated greeting', exc_info=True)
+        log.warning('AI unavailable; using saved content', exc_info=True)
         return fallback
 
 

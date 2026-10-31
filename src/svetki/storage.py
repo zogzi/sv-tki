@@ -15,6 +15,9 @@ class Store:
             state TEXT NOT NULL, message TEXT, variant INTEGER NOT NULL,
             PRIMARY KEY(guild,day,event));
         CREATE TABLE IF NOT EXISTS ai(day TEXT PRIMARY KEY, calls INTEGER NOT NULL, reserved REAL NOT NULL);
+        CREATE TABLE IF NOT EXISTS ai_text(
+            day TEXT, event TEXT, language TEXT, fingerprint TEXT, greeting TEXT NOT NULL,
+            PRIMARY KEY(day,event,language,fingerprint));
         ''')
         self.db.commit()
 
@@ -59,3 +62,17 @@ class Store:
             self.db.execute("INSERT OR IGNORE INTO ai VALUES (?,0,0)", (day,))
             cur = self.db.execute("UPDATE ai SET calls=calls+1,reserved=reserved+? WHERE day=? AND calls<? AND reserved+?<=?", (request_budget, day, cap, request_budget, daily_budget))
         return cur.rowcount == 1
+
+    def ai_text(self, day, event, language, fingerprint):
+        row = self.db.execute(
+            "SELECT greeting FROM ai_text WHERE day=? AND event=? AND language=? AND fingerprint=?",
+            (day, event, language, fingerprint),
+        ).fetchone()
+        return row[0] if row else None
+
+    def save_ai_text(self, day, event, language, fingerprint, greeting):
+        with self.db:
+            self.db.execute(
+                "INSERT OR REPLACE INTO ai_text VALUES (?,?,?,?,?)",
+                (day, event, language, fingerprint, greeting),
+            )
